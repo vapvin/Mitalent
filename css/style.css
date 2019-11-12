@@ -1,0 +1,25 @@
+@import url(reset.css);
+
+.wrap {
+    max-width: 1920px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.home {
+    width: 100%;
+    height: 1080px;
+    background: #758965;
+}
+
+.stories {
+    width: 100%;
+    height: 1630px;
+    background: #124875;
+}
+
+.footer {
+    width: 100%;
+    height: 115px;
+    background: #784589;
+}
