@@ -2,6 +2,8 @@
 
 $maic: #bbd7d7;
 $mais: #d3dcdc;
+$mait: #b4d3d3;
+$item: #e2e8e8;
 
 
 * {
@@ -128,6 +130,7 @@ $mais: #d3dcdc;
         left: 232px;
         width: 485px;
         height: 185px;
+        z-index: 999;
 
         h1 {
             width: 100%;
@@ -135,6 +138,7 @@ $mais: #d3dcdc;
             font-size: 4.7rem;
             font-weight: 500;
             letter-spacing: 5px;
+            margin-bottom: 120px;
         }
 
         span {
@@ -145,6 +149,11 @@ $mais: #d3dcdc;
             position: absolute;
             top: 20px;
             right: 70px;
+        }
+
+        h2 {
+            letter-spacing: 3px;
+            color: #333;
         }
     }
 
@@ -206,19 +215,205 @@ $mais: #d3dcdc;
 .bottom_fir {
     width: 100%;
     height: 250px;
-    background: #375;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 0 0 60px;
+    position: relative;
+
+    .rotate {
+        align-self: center;
+        flex: none;
+        margin-right: auto;
+        transform: rotate(-90deg);
+        font-weight: 600;
+        padding: 0 0 20px;
+    }
+
+    .bottom_color {
+        width: 480px;
+        height: 100%;
+        background: #fff;
+        padding: 60px 0 0 80px;
+
+        a {
+            display: block;
+            width: 50%;
+            font-size: 1.1rem;
+            letter-spacing: 2px;
+            margin: 20px 0;
+            color: #aaa;
+            font-weight: 600;
+            position: relative;
+
+            &:nth-child(2) {
+                color: black;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    display: block;
+                    width: 40px;
+                    height: 3px;
+                    background: black;
+                    left: 80%;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+            }
+        }
+    }
+
+    .box_bottom {
+        width: 1122px;
+        height: 100%;
+        background: $mais;
+    }
+
 }
 
 .bottom_sec {
     width: 100%;
     height: 110px;
-    background: #164;
+    padding: 0 0 0 60px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+
+    .view {
+        width: 240px;
+        height: 100%;
+        background: $mait;
+        border: none;
+        padding: none;
+        outline: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 1.1rem;
+        font-weight: 600;
+        letter-spacing: 2px;
+    }
+
+    .icon_btn {
+        width: 110px;
+        height: 110px;
+        background: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        i {
+            font-size: 2.4rem;
+        }
+    }
+
+    .sec_color {
+        width: 1013px;
+        height: 100%;
+        background: $mais;
+    }
 }
 
 .stories {
     width: 100%;
     height: 1630px;
-    background: #124875;
+    padding: 0 120px;
+
+    .st_nav {
+        width: 100%;
+        height: 230px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        a {
+            display: block;
+            font-weight: 600;
+            color: #777;
+            margin: 0 30px;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &:nth-child(2) {
+                color: #000;
+                position: relative;
+
+                &::after {
+                    display: block;
+                    position: absolute;
+                    content: "";
+                    top: 100%;
+                    width: 100%;
+                    height: 3px;
+                    background: #000;
+                }
+            }
+        }
+    }
+
+    .contents_card {
+        width: 100%;
+        height: 980px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: 490px;
+
+        .grid_items:nth-child(1),
+        .grid_items:nth-child(6),
+        .grid_items:nth-child(8) {
+            background: $item;
+        }
+
+        .grid_items:nth-child(2),
+        .grid_items:nth-child(4),
+        .grid_items:nth-child(5),
+        .grid_items:nth-child(7) {
+            background: $mais;
+        }
+
+        .grid_items:nth-child(3) {
+            background: $mait;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+            padding: 20px;
+
+            .move_btn {
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                background: #f1f2f3;
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                border: none;
+                outline: none;
+                font-size: 1.8rem;
+            }
+
+            h3,
+            p {
+                margin: 15px;
+                color: white;
+            }
+
+            h3 {
+                font-size: 2rem;
+            }
+
+            p {
+                font-weight: 500;
+                letter-spacing: 2px;
+                margin-top: 0;
+            }
+        }
+    }
 }
 
 .footer {
