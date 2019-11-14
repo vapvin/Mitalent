@@ -347,7 +347,7 @@
 
 .stories {
   width: 100%;
-  height: 1630px;
+  height: auto;
   padding: 0 120px;
 }
 
@@ -466,6 +466,123 @@
   font-weight: 500;
   letter-spacing: 2px;
   margin-top: 0;
+}
+
+.stories .more_btn {
+  width: 100%;
+  height: 190px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.stories .more_btn button {
+  width: 220px;
+  height: 60px;
+  background: #bbd7d7;
+  border: none;
+  border-radius: 50px;
+  outline: none;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+
+.stories .oursories {
+  width: 100%;
+  height: 1630px;
+  padding: 0 120px;
+}
+
+.stories .oursories .stories_title {
+  width: 100%;
+  height: 210px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.stories .oursories .stories_title h4 {
+  font-size: 50px;
+  position: relative;
+  padding: 50px 0;
+}
+
+.stories .oursories .stories_title h4::after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 50%;
+  height: 2px;
+  background: #333;
+}
+
+.stories .oursories .stories_card {
+  width: 100%;
+  height: 140px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.stories .oursories .stories_card .card {
+  width: 33.3%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.stories .oursories .stories_card .card:last-child {
+  width: 33.4%;
+}
+
+.stories .oursories .stories_card .card:nth-child(2) .box_sec {
+  background: #bbd7d7;
+}
+
+.stories .oursories .stories_card .card .box_sec {
+  width: 200px;
+  height: 100%;
+  background: #d3dcdc;
+}
+
+.stories .oursories .stories_card .card .text_sec {
+  width: 279px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 10px;
 }
 
 .footer {

@@ -295,7 +295,7 @@ $item: #e2e8e8;
 
 .stories {
 	width: 100%;
-	height: 1630px;
+	height: auto;
 	padding: 0 120px;
 
 	.st_nav {
@@ -388,6 +388,97 @@ $item: #e2e8e8;
 				font-weight: 500;
 				letter-spacing: 2px;
 				margin-top: 0;
+			}
+		}
+	}
+
+	.more_btn {
+		width: 100%;
+		height: 190px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		button {
+			width: 220px;
+			height: 60px;
+			background: $maic;
+			border: none;
+			border-radius: 50px;
+			outline: none;
+			color: white;
+			font-weight: 600;
+			letter-spacing: 3px;
+		}
+	}
+
+	.oursories {
+		width: 100%;
+		height: 1630px;
+		padding: 0 120px;
+
+		.stories_title {
+			width: 100%;
+			height: 210px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			h4 {
+				font-size: 50px;
+				position: relative;
+				padding: 50px 0;
+
+				&::after {
+					display: block;
+					content: "";
+					position: absolute;
+					top: 100%;
+					left: 50%;
+					transform: translateX(-50%);
+					width: 50%;
+					height: 2px;
+					background: #333;
+				}
+			}
+		}
+
+		.stories_card {
+			width: 100%;
+			height: 140px;
+			display: flex;
+			align-items: center;
+
+			.card {
+				width: 33.3%;
+				height: 100%;
+				display: flex;
+
+				&:last-child {
+					width: 33.4%;
+				}
+
+				&:nth-child(2) {
+					.box_sec {
+						background: $maic;
+					}
+				}
+
+				.box_sec {
+					width: 200px;
+					height: 100%;
+					background: $mais;
+				}
+
+				.text_sec {
+					width: 279px;
+					height: 100%;
+					display: flex;
+					flex-direction: column;
+					justify-content: space-between;
+					align-items: flex-start;
+					padding: 10px;
+				}
 			}
 		}
 	}
